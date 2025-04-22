@@ -7,9 +7,6 @@ interface Task {
   dueDate: string;
   completed: boolean;
 }
-
-// const RemainderApp = () => {
-  // }
   
   const App = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -70,7 +67,7 @@ interface Task {
   {
     filteredTasks.map((task) => (
       <li key={task.id}>
-        <div>
+        <div style={{marginBottom: "10px"}}>
           <span>{task.taskName} - {task.dueDate}</span>
           <button onClick={() => toggleCompletion(task.id)}>{task.completed ? "Mark Incomplete" : "Mark Complete"}</button>
         </div>

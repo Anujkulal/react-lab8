@@ -147,3 +147,8 @@ form button:hover {
 .task-item button:hover {
   background-color: #059669;
 }
+
+span {
+  color: #000000;
+  margin-right: 20px;
+}
